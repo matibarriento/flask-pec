@@ -1,0 +1,13 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personajes</title>
+</head>
+<body>
+    {% for per in personajes%}
+        <h1>{{per.nombre}}</h1>
+        <h2>{{per.pelicula}}</h2>
+        <h3>{{per.virtud}}</h3>
+    {% endfor %}
+</body>
+</html>
