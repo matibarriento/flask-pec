@@ -7,6 +7,9 @@ class Personaje():
         self.pelicula = pelicula
         self.virtud = virtud
 
+    def get_virtud(self):
+        return self.virtud
+
 
 chuck = Personaje("Chuck Norris", "The Delta Force", "Roundhouse Kick")
 bat = Personaje("Batman", "Batman", "Ser Batman")

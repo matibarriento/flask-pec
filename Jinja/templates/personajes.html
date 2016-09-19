@@ -4,10 +4,14 @@
     <title>Personajes</title>
 </head>
 <body>
-    {% for per in personajes%}
-        <h1>{{per.nombre}}</h1>
-        <h2>{{per.pelicula}}</h2>
-        <h3>{{per.virtud}}</h3>
-    {% endfor %}
+    {% if personajes %}
+        {% for per in personajes%}
+            <h1>{{per.nombre}}</h1>
+            <h2>{{per.pelicula}}</h2>
+            <h3>{{per.virtud}}</h3>
+        {% endfor %}
+    {% else %}
+        <h1>Sin personajes</h1>
+    {% endif %}
 </body>
 </html>

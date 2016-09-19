@@ -1,4 +1,5 @@
 {% extends "_layout.html" %}
+{% from "_helpers.html" import render_per with context %}
 {% block title %} Personajes {% endblock %}
 
 {% block content %}
@@ -12,11 +13,7 @@
             </thead>
             <tbody>
                 {% for per in personajes%}
-                    <tr>
-                        <td>{{per.nombre}}</td>
-                        <td>{{per.pelicula}}</td>
-                        <td>{{per.virtud}}</td>
-                    </tr>
+                   {{render_per(per)}}
                 {% endfor %}
             </tbody>
         </table>

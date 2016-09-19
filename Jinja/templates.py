@@ -17,11 +17,13 @@ def index_times(times):
 @app.route("/personajes/")
 @app.route("/personajes/<int:take>")
 def personajes(take=None):
-    if take:
+    if not take:
+        personajes = []
+    elif take > 0:
         personajes = soy_un_mock[:take]
     else:
         personajes = soy_un_mock
-    return render_template("personajes.html", personajes=personajes)
+    return render_template("personajes2.html", personajes=personajes)
 
 
 if __name__ != "main":
