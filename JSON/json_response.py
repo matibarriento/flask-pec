@@ -17,7 +17,7 @@ def index(name=None):
 
 @app.route("/cuadrado/<int:num>")
 def cuadrado(num):
-    return jsonify(result=num ** 2)
+    return jsonify(result=num ** 2, success=True)
 
 
 @app.route("/personajes/")
