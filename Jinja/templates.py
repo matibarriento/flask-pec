@@ -23,7 +23,7 @@ def personajes(take=None):
         personajes = soy_un_mock[:take]
     else:
         personajes = soy_un_mock
-    return render_template("personajes2.html", personajes=personajes)
+    return render_template("personajes.html", personajes=personajes)
 
 
 if __name__ != "main":
