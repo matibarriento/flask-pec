@@ -1,7 +1,3 @@
-
-import json
-
-
 class Personaje():
     """docstring for Personaje"""
 

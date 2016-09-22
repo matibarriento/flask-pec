@@ -1,0 +1,10 @@
+{% extends "_layout.html" %}
+{% block title %} Index - {% endblock %}
+{% block content %}
+    <img src="{{url_for('static', filename='img/python-flask.jpg')}}" alt="">
+    <script type="text/javascript">
+        $(function(){
+            toggleMenu("home-menu");
+        })
+    </script>
+{% endblock %}

@@ -12,7 +12,7 @@ def obj_dict(obj):
 @app.route("/<name>")
 def index(name=None):
     message = "Hello {0}".format(name) if name else "Hello World"
-    return jsonify(message=message)
+    return jsonify(mensaje=message)
 
 
 @app.route("/cuadrado/<int:num>")
@@ -20,8 +20,8 @@ def cuadrado(num):
     return jsonify(result=num ** 2, success=True)
 
 
-@app.route("/personajes/")
-@app.route("/personajes/<int:take>")
+@app.route("/api/personajes/")
+@app.route("/api/personajes/<int:take>")
 def personajes(take=None):
     if not take:
         personajes = []
